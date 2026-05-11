@@ -81,7 +81,7 @@ export default function AboutModal({ onClose }) {
             </button>
             <button className="about-btn about-btn-outline"
               onClick={() => window.open(klasifikasi)}>
-              <FontAwesomeIcon icon={faFileLines} /> Kode Klasifikasi Arsip Fasilitatif
+              <FontAwesomeIcon icon={faFileLines} /> Klasifikasi Kode Surat
             </button>
           </div>
 
