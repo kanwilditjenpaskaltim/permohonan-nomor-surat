@@ -12,6 +12,8 @@ import {
 import logo from "../../assets/logo_pas_outline.png";
 
 const whatsappAdmin = "https://api.whatsapp.com/send?phone=6289668652403&text=*%23LAPORAN%20ERROR%20SISTEM%20PERMOHONAN%20NOMOR%20SURAT*%0A%0AKode%20Surat%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%20(SA.03.04)%0AIsi%20Ringkasan%20Surat%20%20%20%20%3A%20(Surat%20Keterangan......)%0AJumlah%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%20(5)";
+const bukupanduan = "https://drive.google.com/file/d/1vH1kzV2lZJUrk76jly4FpyOozi01_XRn/view?usp=sharing";
+const klasifikasi = "https://drive.google.com/file/d/1GzQGOWD18ENGQFmwsbEvsNImHdeg_fCI/view?usp=sharing";
 
 export default function AboutModal({ onClose }) {
   return (
@@ -72,15 +74,23 @@ export default function AboutModal({ onClose }) {
             </ul>
           </div>
 
-          <div className="about-actions">
-            <button className="about-btn about-btn-outline">
-              <FontAwesomeIcon icon={faBook} /> User Guide
+          <div className="about-actions-top">
+            <button className="about-btn about-btn-outline"
+              onClick={() => window.open(bukupanduan)}>
+              <FontAwesomeIcon icon={faBook} /> Buku Panduan
             </button>
+            <button className="about-btn about-btn-outline"
+              onClick={() => window.open(klasifikasi)}>
+              <FontAwesomeIcon icon={faFileLines} /> Kode Klasifikasi Arsip Fasilitatif
+            </button>
+          </div>
+
+          <div className="about-actions-bottom">
             <button
               className="about-btn about-btn-primary"
               onClick={() => window.open(whatsappAdmin)}>
               <FontAwesomeIcon icon={faHeadset} />
-              Contact Admin IT
+              Hubungi Operator
             </button>
           </div>
 
