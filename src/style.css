@@ -410,6 +410,8 @@ body {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    width: 100%;
+    min-width: 0;
 }
 
 /* ================================
@@ -418,6 +420,7 @@ body {
 .form-input,
 .form-select,
 .form-textarea {
+    display: block;
     padding: 10px 13px;
     border-radius: 10px;
     border: 1.5px solid #e2e8f0;
@@ -428,6 +431,8 @@ body {
     background: #fff;
     transition: border-color 0.2s, box-shadow 0.2s;
     width: 100%;
+    max-width: 100%;
+    min-width: 0;
 }
 
 .form-input::placeholder,
@@ -478,8 +483,24 @@ body {
 }
 
 .form-input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
+    display: block;
+    width: 100%;
+    min-width: 100%;
+    min-height: 42px;
+    line-height: normal;
     color: #4b5563;
     cursor: pointer;
+}
+
+.form-input[type="date"]::-webkit-date-and-time-value {
+    min-height: 1.4em;
+    text-align: left;
+}
+
+.form-input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-left: auto;
 }
 
 .form-input[type="number"] {
