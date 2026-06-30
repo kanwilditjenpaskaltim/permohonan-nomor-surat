@@ -53,13 +53,13 @@ export default function AboutModal({ onClose }) {
               <div className="about-grid-label">
                 <FontAwesomeIcon icon={faFileLines} /> Version
               </div>
-              <div className="about-grid-value">Beta 1.0.0</div>
+              <div className="about-grid-value">Ver 1.0.1</div>
             </div>
             <div className="about-grid-item about-grid-item-4">
               <div className="about-grid-label">
                 <FontAwesomeIcon icon={faClockRotateLeft} /> Last Update
               </div>
-              <div className="about-grid-value">21 April 2026</div>
+              <div className="about-grid-value">30 Juni 2026</div>
             </div>
           </div>
 
