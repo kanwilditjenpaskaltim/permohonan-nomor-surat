@@ -14,6 +14,7 @@ import logo from "../../assets/logo_pas_outline.png";
 const whatsappAdmin = "https://api.whatsapp.com/send?phone=6289668652403&text=*%23LAPORAN%20ERROR%20SISTEM%20PERMOHONAN%20NOMOR%20SURAT*%0A%0AKode%20Surat%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%20(SA.03.04)%0AIsi%20Ringkasan%20Surat%20%20%20%20%3A%20(Surat%20Keterangan......)%0AJumlah%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%3A%20(5)";
 const bukupanduan = "https://drive.google.com/file/d/1vH1kzV2lZJUrk76jly4FpyOozi01_XRn/view?usp=sharing";
 const klasifikasi = "https://drive.google.com/file/d/1GzQGOWD18ENGQFmwsbEvsNImHdeg_fCI/view?usp=sharing";
+const klasifikasiUpdate = "https://drive.google.com/file/d/1naH-lO99BgWVhFc24mrH-nw7hrnxDip-/view?usp=drive_link";
 
 export default function AboutModal({ onClose }) {
   return (
@@ -80,7 +81,7 @@ export default function AboutModal({ onClose }) {
               <FontAwesomeIcon icon={faBook} /> Buku Panduan
             </button>
             <button className="about-btn about-btn-outline"
-              onClick={() => window.open(klasifikasi)}>
+              onClick={() => window.open(klasifikasiUpdate)}>
               <FontAwesomeIcon icon={faFileLines} /> Klasifikasi Kode Surat
             </button>
           </div>
