@@ -81,7 +81,7 @@ export default function AboutModal({ onClose }) {
               <FontAwesomeIcon icon={faBook} /> Buku Panduan
             </button>
             <button className="about-btn about-btn-outline"
-              onClick={() => window.open(klasifikasiUpdate)}>
+              onClick={() => window.open(klasifikasi)}>
               <FontAwesomeIcon icon={faFileLines} /> Klasifikasi Kode Surat
             </button>
           </div>
